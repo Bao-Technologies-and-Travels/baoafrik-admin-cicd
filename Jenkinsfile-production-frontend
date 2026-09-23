@@ -138,7 +138,7 @@ EOF
                         npm run build
 
                         pm2 delete ${APP_NAME} || true
-                        pm2 start serve --name ${APP_NAME} -- -s build -l 3000
+                        pm2 start serve --name ${APP_NAME} -- -s build -l 4000
 
                         pm2 save
                         pm2 list

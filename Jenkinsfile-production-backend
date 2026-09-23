@@ -230,7 +230,7 @@ EOF
                         npm run build
 
                         pm2 delete ${APP_NAME} || true
-                        pm2 start dist/server.js --name ${APP_NAME} -- --port 3001
+                        pm2 start dist/server.js --name ${APP_NAME} -- --port 4001
                         pm2 save
 
                         echo "Backend deployed successfully."
